@@ -51,9 +51,14 @@ meansteps <- mean(aggdata$x)
 mediansteps <- median(aggdata$x)
 ```
 
-####Mean total number of steps taken each day : `r meansteps`
-####Median total number of steps taken each day : `r mediansteps`
-
+####Mean total number of steps taken each day : 
+```{r}
+meansteps
+```
+####Median total number of steps taken each day :
+```{r} 
+mediansteps
+```
 ##Time series plot of the average number of steps taken
 
 ```{r plot_avg_steps, echo=TRUE, warning=FALSE}
@@ -122,7 +127,14 @@ mediansteps <- median(aggdata$x)
 
 ```
 
-###The mean total number of steps per day is `r meansteps` and the median is `r mediansteps`. 
+###The mean total number of steps per day is
+```{r}
+meansteps
+``` 
+###The median is 
+```{r}
+mediansteps
+```
 ####The mean is unchanged, but the median moved slightly and is now equal to the mean. Inputting missing data based on an average leaves the average daily total number of steps the same while changing the median.
 
 

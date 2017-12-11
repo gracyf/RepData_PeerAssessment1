@@ -64,9 +64,24 @@ meansteps <- mean(aggdata$x)
 mediansteps <- median(aggdata$x)
 ```
 
-####Mean total number of steps taken each day : 1.0766189\times 10^{4}
-####Median total number of steps taken each day : 10765
+####Mean total number of steps taken each day : 
 
+```r
+meansteps
+```
+
+```
+## [1] 10766.19
+```
+####Median total number of steps taken each day :
+
+```r
+mediansteps
+```
+
+```
+## [1] 10765
+```
 ##Time series plot of the average number of steps taken
 
 
@@ -135,7 +150,7 @@ aggdata <- aggregate(filled_df$steps,by = list(filled_df$date), FUN = "sum")
 hist(aggdata$x,col="green",xlab="Steps taken per day", main = " Total steps taken per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 ##Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
 
@@ -144,7 +159,24 @@ meansteps <- mean(aggdata$x)
 mediansteps <- median(aggdata$x)
 ```
 
-###The mean total number of steps per day is 1.0766189\times 10^{4} and the median is 1.0766189\times 10^{4}. 
+###The mean total number of steps per day is
+
+```r
+meansteps
+```
+
+```
+## [1] 10766.19
+```
+###The median is 
+
+```r
+mediansteps
+```
+
+```
+## [1] 10766.19
+```
 ####The mean is unchanged, but the median moved slightly and is now equal to the mean. Inputting missing data based on an average leaves the average daily total number of steps the same while changing the median.
 
 

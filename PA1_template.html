@@ -167,11 +167,15 @@ hist(aggdata$x,col=&quot;green&quot;,xlab=&quot;Steps taken per day&quot;, main 
 <pre class="r"><code>#Calculate mean and median of steps
 meansteps &lt;- mean(aggdata$x)
 mediansteps &lt;- median(aggdata$x)</code></pre>
-<div id="mean-total-number-of-steps-taken-each-day-1.0766189104" class="section level4">
-<h4>Mean total number of steps taken each day : 1.076618910^{4}</h4>
+<div id="mean-total-number-of-steps-taken-each-day" class="section level4">
+<h4>Mean total number of steps taken each day :</h4>
+<pre class="r"><code>meansteps</code></pre>
+<pre><code>## [1] 10766.19</code></pre>
 </div>
-<div id="median-total-number-of-steps-taken-each-day-10765" class="section level4">
-<h4>Median total number of steps taken each day : 10765</h4>
+<div id="median-total-number-of-steps-taken-each-day" class="section level4">
+<h4>Median total number of steps taken each day :</h4>
+<pre class="r"><code>mediansteps</code></pre>
+<pre><code>## [1] 10765</code></pre>
 </div>
 </div>
 <div id="time-series-plot-of-the-average-number-of-steps-taken" class="section level2">
@@ -235,8 +239,15 @@ hist(aggdata$x,col=&quot;green&quot;,xlab=&quot;Steps taken per day&quot;, main 
 <h2>Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends</h2>
 <pre class="r"><code>meansteps &lt;- mean(aggdata$x)
 mediansteps &lt;- median(aggdata$x)</code></pre>
-<div id="the-mean-total-number-of-steps-per-day-is-1.0766189104-and-the-median-is-1.0766189104." class="section level3">
-<h3>The mean total number of steps per day is 1.076618910^{4} and the median is 1.076618910^{4}.</h3>
+<div id="the-mean-total-number-of-steps-per-day-is" class="section level3">
+<h3>The mean total number of steps per day is</h3>
+<pre class="r"><code>meansteps</code></pre>
+<pre><code>## [1] 10766.19</code></pre>
+</div>
+<div id="the-median-is" class="section level3">
+<h3>The median is</h3>
+<pre class="r"><code>mediansteps</code></pre>
+<pre><code>## [1] 10766.19</code></pre>
 <div id="the-mean-is-unchanged-but-the-median-moved-slightly-and-is-now-equal-to-the-mean.-inputting-missing-data-based-on-an-average-leaves-the-average-daily-total-number-of-steps-the-same-while-changing-the-median." class="section level4">
 <h4>The mean is unchanged, but the median moved slightly and is now equal to the mean. Inputting missing data based on an average leaves the average daily total number of steps the same while changing the median.</h4>
 </div>
