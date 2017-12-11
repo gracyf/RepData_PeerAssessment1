@@ -114,7 +114,7 @@ max_mean_interval$Group.1
 
 ###The highest average step count happened during interval 835
 
-## imputing missing data
+## Imputing missing data with mean of interval for that interval of missing data
 
 ```r
 #Calculating no. of missing values
@@ -128,6 +128,7 @@ data_na <- sum(is.na(activity_df$steps))
 filled_df <- activity_df
 filled_df$date <- as.Date(filled_df$date)
 
+#Find the missing values and fill with the mean interval values corresponding the interval of the missing data
 for ( i in 1:nrow(filled_df)){
         if ( is.na(filled_df$steps[i])){
                 interval <- filled_df$interval[i]
@@ -213,4 +214,4 @@ qplot(interval, AverageSteps, data=dayaverage,
 ![](PA1_template_files/figure-html/plot_steps-1.png)<!-- -->
 
 
-##There are  earlier activity on weekdays as infered from the plot above
+##Inference : There are  earlier activity on weekdays as infered from the plot above
